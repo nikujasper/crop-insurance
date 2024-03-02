@@ -51,7 +51,9 @@
                 <tr>
                     <td><b> Farmer Category: </b></td>
                     <td>
-                        <input type="radio" name="category" value="small">Small <input type="radio" name="category" value="medium"> Medium <input type="radio" name="category" value="large"> Large
+                        <input type="radio" name="category" value="small">Small
+                        <input type="radio" name="category" value="medium"> Medium
+                        <input type="radio" name="category" value="large"> Large
                     </td>
                 </tr>
                 <tr>
