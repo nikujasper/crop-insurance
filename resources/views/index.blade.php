@@ -62,7 +62,7 @@
             </form>
         </table>
     </div>
-    <p>{{isset($message)?$message:''}}</p>
+    <p style="color: red; background-color:yellow; width:300px ">{{isset($message)?$message:''}}</p>
     @php
     $i=1;
     @endphp
