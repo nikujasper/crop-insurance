@@ -62,7 +62,7 @@
             </form>
         </table>
     </div>
-    <p>{{isset($message)?$message:''}}</p>
+    <p style="color: red; background-color:yellow; width:300px">{{isset($message)?$message:''}}</p>
     @php
     $i=1;
     @endphp
@@ -143,33 +143,33 @@
             });
 
             $('#father').blur(function() {
-                    var father = $(this).val();
-                    if (father.length > 12 || /[^a-zA-Z\s]/.test(father)) {
+                var father = $(this).val();
+                if (father.length > 12 || /[^a-zA-Z\s]/.test(father)) {
                     alert('Not more than 12 characters. Only alphabets allowed..!!');
                     $(this).val('');
                 }
             });
 
-        $('#address').blur(function() {
-            var address = $(this).val();
-            if (address.length > 250 || /[^a-zA-Z0-9\s]/.test(address)) {
-                alert('Not more than 250 characters..!!');
-                $(this).val('');
-            }
-        });
+            $('#address').blur(function() {
+                var address = $(this).val();
+                if (address.length > 250 || /[^a-zA-Z0-9\s]/.test(address)) {
+                    alert('Not more than 250 characters..!!');
+                    $(this).val('');
+                }
+            });
 
-        $('#aadhar').blur(function() {
-            var aadhar = $(this).val();
-            if (aadhar.length > 12) {
-                alert('Aadhar should be of 12 digits..!!');
-                $(this).val('');
-            }
-        });
+            $('#aadhar').blur(function() {
+                var aadhar = $(this).val();
+                if (aadhar.length > 12) {
+                    alert('Aadhar should be of 12 digits..!!');
+                    $(this).val('');
+                }
+            });
 
 
-        $('#clear').click(function() {
-            $('#crop').html('<option value="0" hidden>-select-</option>');
-        })
+            $('#clear').click(function() {
+                $('#crop').html('<option value="0" hidden>-select-</option>');
+            })
 
         });
     </script>
